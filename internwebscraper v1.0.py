@@ -6,6 +6,14 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from google.oauth2.credentials import Credentials
 
+class JobListing: #TODO - refactor to use this class
+    def __init__(self, title, company, location, abstract, date):
+        self.title = title
+        self.company = company
+        self.location = location
+        self.abstract = abstract
+        self.date = date
+      
 
 
 driver = webdriver.Chrome() 
@@ -191,3 +199,4 @@ main(listings)
  #add more websites
  #add functionality to mark jobs as seen
  #add links to job postings in csv
+ #remove duplicates
