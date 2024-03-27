@@ -25,7 +25,7 @@ drive = GoogleDrive(gauth)
 
 def loadYaml(): #load yaml file containing credentials
     with open(r'C:\Users\Thanatos\settings.yml', 'r') as f:
-    # Rest of your code here
+   
 
         credentials = yaml.safe_load(f)
     return credentials
